@@ -52,7 +52,15 @@ function App() {
       arr.push(returnText[keys[i]].map((id, text) => <Col>{id}</Col>));
     }
     return arr.map((id, name) => (
-      <Row xs="12" style={{ fontSize: 25, color: "white" }}>
+      <Row
+        xs="8"
+        style={{
+          fontSize: 25,
+          color: "white",
+          marginBottom: "20px",
+          textAlign: "center",
+        }}
+      >
         {id}
       </Row>
     ));
@@ -89,7 +97,16 @@ function App() {
             ""
           ) : (
             <div>
-              <h1 style={{ color: "white" }}>Topics</h1> {displayText()}
+              <h1
+                style={{
+                  color: "white",
+                  textAlign: "center",
+                  marginBottom: "30px",
+                }}
+              >
+                Topics
+              </h1>{" "}
+              {displayText()}
             </div>
           )}
         </Container>
